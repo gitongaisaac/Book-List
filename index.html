@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/Main css/normalize.css" />
+    <link rel="stylesheet" href="/css/Main css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>MyBookList App</title>
+  </head>
+  <body>
+    <!-- 
+    ================================================================================================================================
+    heading
+    ================================================================================================================================
+    -->
+    <!-- <div class="heading">
+      <div class="container-1 text-center flex top-3">
+        <i class="fas fa-book-open fa-3x primary-color"></i>
+        <h1 class="top">My<span class="primary-color">Book</span>List</h1>
+      </div>
+    </div> -->
+
+    <!-- 
+    ================================================================================================================================
+    Form
+    ================================================================================================================================
+    -->
+
+    <section class="details">
+      <div class="container-1">
+        <div class="span">
+          <div class="heading flex top">
+            <i class="fas fa-book-open fa-3x primary-color"></i>
+            <h1 class="top">My<span class="primary-color">Book</span>List</h1>
+          </div>
+
+          <form class="form-2 book-form top">
+            <div class="form-info">
+              <label for="name">Title:</label>
+              <input type="text" id="title" placeholder="Book Title" />
+            </div>
+
+            <div class="form-info">
+              <label for="company">Author:</label>
+              <input type="text" id="author" placeholder="Book Author" />
+            </div>
+
+            <div class="form-info">
+              <label for="email">ISBN:</label>
+              <input type="text" id="isbn" placeholder="Book ISBN" />
+            </div>
+
+            <div class="form-info button">
+              <button class="btn btn-thin btn-rounded btn-span btn-secondary">
+                Add Book
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-content">
+      <div class="container-1">
+        <div class="info my-2 py-2">
+          <table class="table">
+            <h2 class="top primary-color flex">Books</h2>
+            <thead class="table-head">
+              <tr class="table-head-row">
+                <th class="column-title">Title</th>
+                <th class="column-title">Author</th>
+                <th class="column-title">ISBN</th>
+                <th class="column-title remove"></th>
+              </tr>
+            </thead>
+
+            <tbody class="table-body">
+              <!-- <tr class="table-body-row">
+                <td class="table-detail"></td>
+                <td class="table-detail"></td>
+                <td class="table-detail"></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="Book LIst 2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1318 @@
+/* 
+================================================================================================================================
+FONT IMPORTS
+================================================================================================================================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trirong&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+/* 
+================================================================================================================================
+ROOT
+================================================================================================================================
+*/
+
+:root {
+  /* 
+================================================================================================================================
+Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
+================================================================================================================================
+*/
+
+  /* Grey shades*/
+  --grey-100: #f8fafc;
+  --grey-200: #f1f5f9;
+  --grey-300: #e2e8f0;
+  --grey-400: #cbd5e1;
+  --grey-500: #94a3b8;
+  --grey-600: #64748b;
+  --grey-700: #475569;
+  --grey-800: #344256;
+  --grey-900: #1e293b;
+
+  /* Base (Blue shades) */
+  --base-100: #ccccff;
+  --base-200: #9999ff;
+  --base-300: #6666ff;
+  --base-400: #3333ff;
+  --base-500: #0000ff;
+  --base-600: #0000cc;
+  --base-700: #000099;
+  --base-800: #000066;
+  --base-900: #000033;
+
+  /* Shade */
+  --shade-100: #dce5fe;
+  --shade-200: #b8cbfc;
+  --shade-300: #95b2fb;
+  --shade-400: #7198f9;
+  --shade-500: #4e7ef8;
+  --shade-600: #3e65c6;
+  --shade-700: #2f4c95;
+  --shade-800: #1f3263;
+  --shade-900: #101932;
+
+  /* Primary (Blue shades) */
+  --primary-100: #cde4fb;
+  --primary-200: #9bcaf8;
+  --primary-300: #68aff4;
+  --primary-400: #3695f1;
+  --primary-500: #047aed;
+  --primary-600: #0362be;
+  --primary-700: #02498e;
+  --primary-800: #02315f;
+  --primary-900: #01182f;
+
+  /* Secondary (purple shades) */
+  --secondary-100: #e2e0ff;
+  --secondary-200: #c1beff;
+  --secondary-300: #a29dff;
+  --secondary-400: #837dff;
+  --secondary-500: #645cff;
+  --secondary-600: #504acc;
+  --secondary-700: #3c3799;
+  --secondary-800: #282566;
+  --secondary-900: #141233;
+
+  /* Tertiary (pink shades) */
+  --tertiary-100: #fff2f5;
+  --tertiary-200: #ffe6ea;
+  --tertiary-300: #ffd9e0;
+  --tertiary-400: #ffcdd5;
+  --tertiary-500: #ffc0cb;
+  --tertiary-600: #cc9aa2;
+  --tertiary-700: #99737a;
+  --tertiary-800: #664d51;
+  --tertiary-900: #332629;
+
+  /* Sip */
+  --sip-100: #f7e6ed;
+  --sip-200: #eecddb;
+  --sip-300: #e6b3ca;
+  --sip-400: #dd9ab8;
+  --sip-500: #d581a6;
+  --sip-600: #aa6785;
+  --sip-700: #804d64;
+  --sip-800: #553442;
+  --sip-900: #2b1a21;
+
+  /* gin */
+  --gin-100: #ccffff;
+  --gin-200: #99ffff;
+  --gin-300: #66ffff;
+  --gin-400: #33ffff;
+  --gin-500: #00ffff;
+  --gin-600: #00cccc;
+  --gin-700: #009999;
+  --gin-800: #006666;
+  --gin-900: #003333;
+
+  /* Low */
+  --low-100: #e1d9d9;
+  --low-200: #c3b3b3;
+  --low-300: #a48d8d;
+  --low-400: #866767;
+  --low-500: #684141;
+  --low-600: #533434;
+  --low-700: #3e2727;
+  --low-800: #2a1a1a;
+  --low-900: #150d0d;
+
+  /* Stroke (green shades) */
+  --stroke-100: #cce6cc;
+  --stroke-200: #99cc99;
+  --stroke-300: #66b366;
+  --stroke-400: #339933;
+  --stroke-500: #008000;
+  --stroke-600: #006600;
+  --stroke-700: #004d00;
+  --stroke-800: #003300;
+  --stroke-900: #001a00;
+
+  /* Tint */
+  --tint-100: #dbffe7;
+  --tint-200: #b8ffd0;
+  --tint-300: #94ffb8;
+  --tint-400: #71ffa1;
+  --tint-500: #4dff89;
+  --tint-600: #3ecc6e;
+  --tint-700: #2e9952;
+  --tint-800: #1f6637;
+  --tint-900: #0f331b;
+
+  /* Block */
+  --block-100: #ddefeb;
+  --block-200: #bbded6;
+  --block-300: #99cec2;
+  --block-400: #77bdad;
+  --block-500: #55ad99;
+  --block-600: #448a7a;
+  --block-700: #33685c;
+  --block-800: #22453d;
+  --block-900: #11231f;
+
+  /* Vet */
+  --vet-100: #ecf8e9;
+  --vet-200: #daf1d3;
+  --vet-300: #c7ebbe;
+  --vet-400: #b5e4a8;
+  --vet-500: #a2dd92;
+  --vet-600: #82b175;
+  --vet-700: #618558;
+  --vet-800: #41583a;
+  --vet-900: #202c1d;
+
+  /* Spin (orange shades) */
+  --spin-100: #ffedcc;
+  --spin-200: #ffdb99;
+  --spin-300: #ffc966;
+  --spin-400: #ffb733;
+  --spin-500: #ffa500;
+  --spin-600: #cc8400;
+  --spin-700: #996300;
+  --spin-800: #664200;
+  --spin-900: #332100;
+
+  /* Split (yellow shades) */
+  --split-100: #ffffcc;
+  --split-200: #ffff99;
+  --split-300: #ffff66;
+  --split-400: #ffff33;
+  --split-500: #ffff00;
+  --split-600: #cccc00;
+  --split-700: #999900;
+  --split-800: #666600;
+  --split-900: #333300;
+
+  /* Flip */
+  --flip-100: #f4eed5;
+  --flip-200: #e9ddab;
+  --flip-300: #dfcc81;
+  --flip-400: #d4bb57;
+  --flip-500: #c9aa2d;
+  --flip-600: #a18824;
+  --flip-700: #79661b;
+  --flip-800: #504412;
+  --flip-900: #282209;
+
+  /* Red */
+  --red-100: #ffcccc;
+  --red-200: #ff9999;
+  --red-300: #ff6666;
+  --red-400: #ff3333;
+  --red-500: #ff0000;
+  --red-600: #cc0000;
+  --red-700: #990000;
+  --red-800: #660000;
+  --red-900: #330000;
+
+  /* Other colors */
+  --background-color: var(--grey-100);
+  --dark-color: #000000;
+  --text-color: var(--dark-color);
+  --bg-dark: #002240;
+  --less-dark: #333;
+  --light-color: #ffffff;
+  --link-color: #0000ff;
+
+  /* 
+================================================================================================================================
+Fonts (Heading, body and fancy fonts)
+================================================================================================================================
+*/
+
+  /*Heading fonts */
+  --headingfont-1: "Neuton", sans-serif; /* light */ /* */
+  --headingfont-2: "Prata", sans-serif; /* heavy */
+  --headingfont-3: "Lato", sans-serif; /* Light */ /* */
+  --headingfont-4: "Cormorant Garamond", sans-serif; /* */ /* */
+  --headingfont-5: "Gentium Basic", sans-serif; /* */ /* */
+  --headingfont-6: "Trirong", sans-serif; /* */
+  --headingfont-7: "Proza Libre", sans-serif;
+  --headingfont-8: "Libre Franklin", sans-serif;
+  --headingfont-9: "Work Sans", sans-serif; /* */ /* */
+  --headingfont-10: "Montserrat", sans-serif;
+  --headingfont-11: "Josefin Sans", sans-serif;
+  --headingfont-12: "Lateef", sans-serif;
+
+  /* Body fonts */
+  --bodyfont-1: "Roboto", sans-serif; /* light */ /* */
+  --bodyfont-2: "Sanchez", sans-serif; /* heavy */
+  --bodyfont-3: "karma", sans-serif; /* light */
+  --bodyfont-4: "Nunito", sans-serif; /* light */ /* */
+  --bodyfont-5: "Proza Libre", sans-serif; /* heavy */
+  --bodyfont-6: "Libre Franklin", sans-serif; /* light */ /* */
+  --bodyfont-7: "Libre Baskerville", sans-serif;
+  --bodyfont-8: "Trirong", sans-serif; /* medium */
+  --bodyfont-9: "Rubik", sans-serif; /* light */ /* */
+  --bodyfont-10: "Work Sans", sans-serif; /* light */ /* */
+  --bodyfont-11: "Taviraj", sans-serif; /* light */ /* */
+  --bodyfont-12: "Lato", sans-serif; /* light */ /* */
+
+  /* Fancy fonts */
+  --fancyfont-1: "Eczar", sans-serif;
+  --fancyfont-2: "Dancing Script", sans-serif;
+  --fancyfont-3: "Lobster Two", sans-serif;
+  --fancyfont-4: "Playball", sans-serif;
+  --fancyfont-5: "Handlee", sans-serif;
+  --fancyfont-6: "Tangerine", sans-serif;
+  --fancyfont-7: "Bad Script", sans-serif;
+  --fancyfont-8: "Marck Script", sans-serif;
+  --fancyfont-9: "Charm", sans-serif;
+  --fancyfont-10: "Niconne", sans-serif;
+
+  /* 
+================================================================================================================================
+Font weights, Letter spaacings and font sizes
+================================================================================================================================
+*/
+
+  /* Font-wights */
+  --font-weight-1: 400;
+  --font-weight-2: 600;
+
+  /* Letter spacing */
+  --letterspacing-1: 1.2px;
+  --letterspacing-2: 1.5px;
+  --letterspacing-3: 1.7px;
+
+  /* Font sizes */
+  --font-size-1: 1rem; /* 16px */
+  --font-size-2: 1.025rem; /* 16.4px */
+  --font-size-3: 1.125rem; /* 18px */
+  --font-size-4: 1.25rem; /* 20px */
+  --font-size-5: 1.5rem; /* 24px */
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 3.5rem;
+  --font-size-10: 4rem;
+  --font-size-11: 4.5rem;
+  --font-size-12: 5rem;
+  --font-size-13: 5.5rem;
+
+  /* 
+================================================================================================================================
+Containers
+================================================================================================================================
+*/
+
+  --max-width-1: 1100px;
+  --max-width-2: 1200px;
+  --max-width-3: 1300px;
+  --max-width-4: 1400px;
+
+  /* 
+================================================================================================================================
+Transitions
+================================================================================================================================
+*/
+
+  --transition-1: 0.2s ease-in-out all;
+  --transition-2: 0.3s ease-in-out all;
+  --transition-3: 0.5s ease-in-out all;
+  --transition-4: transform 0.2s ease-in;
+  --transition-5: transform 0.3s ease-in;
+  --transition-6: transform 0.5s ease-in;
+
+  /* 
+================================================================================================================================
+Transformations on the y and x axes
+================================================================================================================================
+*/
+
+  /* Transforms on the Y axes*/
+  --transform-11: translateY(-3px);
+  --transform-12: translateY(-5px);
+  --transform-13: translateY(-7px);
+  --transform-14: translateY(-10px);
+  /*  */
+  --transform-16: translateY(3px);
+  --transform-17: translateY(5px);
+  --transform-18: translateY(7px);
+  --transform-19: translateY(10px);
+
+  /* Transforms on the x axes */
+  --transform-21: translatex(-3px);
+  --transform-22: translatex(-5px);
+  --transform-23: translatex(-7px);
+  --transform-24: translatex(-10px);
+  /*  */
+  --transform-26: translatex(3px);
+  --transform-27: translatex(5px);
+  --transform-28: translatex(7px);
+  --transform-29: translatex(10px);
+
+  /* 
+================================================================================================================================
+Alerts
+================================================================================================================================
+*/
+
+  --alert-success: #b3d9b3;
+  --alert-error: #ff9999;
+  color: #c0f6fe;
+
+  /* 
+================================================================================================================================
+Box Shadows
+================================================================================================================================
+*/
+
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+} /* ===== End of root ===== */
+
+/* 
+================================================================================================================================
+Scrollsbar
+================================================================================================================================
+*/
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body-color); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grey-700); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 3px solid var(--grey-300); /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--grey-600);
+}
+
+/* 
+================================================================================================================================
+Prototypes
+================================================================================================================================
+*/
+
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.75;
+  font-size: var(--font-size-1);
+  font-family: var(--bodyfont-11);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2rem 0 1rem 0;
+  text-transform: capitalize;
+  line-height: 1.2;
+  font-weight: var(--font-weight-1);
+  font-family: var(--headingfont-1);
+  color: var(--dark-color);
+}
+
+h1 {
+  font-size: var(--font-size-8);
+}
+
+h2 {
+  font-size: var(--font-size-7);
+}
+
+h3 {
+  font-size: var(--font-size-6);
+}
+h4 {
+  font-size: var(--font-size-5);
+}
+
+p {
+  margin: 1.25rem 0;
+  max-width: 600px;
+}
+
+a {
+  /* display: inline-block; */
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-700);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+i {
+  padding: 10px;
+}
+
+code,
+pre {
+  background: var(--grey-900);
+  color: #fff;
+  padding: 10px;
+}
+
+.select,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  outline: none;
+}
+
+/* Prototype override */
+.p-no-width {
+  max-width: 100%;
+}
+
+.no-radius {
+  border-radius: 0px;
+}
+
+.no-hover:hover {
+  transform: none;
+}
+
+/* 
+================================================================================================================================
+Top and side styles // Provides the margins on items on the top and side.
+================================================================================================================================
+*/
+
+/* Top */
+.top {
+  margin: 0;
+  padding: 0;
+}
+
+.top-2 {
+  margin: 0 0 1rem 0;
+}
+
+.top-3 {
+  margin: 20px 0 1rem 0;
+}
+
+.side {
+  margin: 0;
+  padding: 0;
+}
+
+/* .side-2 {
+}
+
+.side-3 {
+} */
+
+.text-center {
+  text-align: center;
+}
+
+/* 
+================================================================================================================================
+Displays
+================================================================================================================================
+*/
+
+.flex {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* 
+================================================================================================================================
+Colors
+================================================================================================================================
+*/
+
+.light-color {
+  color: var(--light-color);
+}
+
+.primary-color {
+  color: var(--primary-500);
+}
+
+.secondary-color {
+  color: var(--secondary-600);
+}
+
+.tertiary-color {
+  color: var(--tertiary-500);
+}
+
+.stroke-color {
+  color: var(--stroke-500);
+}
+
+.dark-color {
+  color: var(--dark-color);
+}
+
+/* 
+================================================================================================================================
+Containers
+================================================================================================================================
+*/
+
+.container-1 {
+  max-width: var(--max-width-1);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-2 {
+  max-width: var(--max-width-2);
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.container-3 {
+  max-width: var(--max-width-3);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-4 {
+  max-width: var(--max-width-4);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* 
+================================================================================================================================
+Backgrounds
+================================================================================================================================
+*/
+
+.bg-white {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.bg-grey {
+  background-color: var(--grey-300);
+  color: var(--text-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-500);
+  color: var(--light-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-500);
+  color: var(--light-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-600);
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--light-color);
+}
+
+.bg-primary a,
+.bg-secondary a,
+.bg-dark a {
+  color: var(--light-color);
+}
+
+.bg-grey a,
+.bg-white a {
+  color: var(--dark-color);
+}
+
+/* 
+================================================================================================================================
+Buttons
+================================================================================================================================
+*/
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-5);
+  text-align: center;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--secondary-500);
+  color: var(--text-color);
+}
+
+.btn-transparent {
+  background-color: var(--light-color);
+  border: 1px solid var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn-span {
+  width: 100%;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(0.98);
+}
+
+.btn-no-hover:hover {
+  transform: none;
+}
+
+/* 
+================================================================================================================================
+Button sizes || The default size of any button is thin
+================================================================================================================================
+*/
+
+.btn-xthin {
+  padding: 5px 15px;
+}
+
+.btn-thin {
+  padding: 10px 30px;
+}
+
+.btn-medium {
+  padding: 15px 40px;
+  font-size: var(--font-size-1);
+}
+
+.btn-lg {
+  padding: 20px 40px;
+  font-size: var(--font-size-1);
+}
+
+.btn-xw {
+  padding: 10px 60px;
+}
+
+/* 
+================================================================================================================================
+Button Colors
+================================================================================================================================
+*/
+
+.btn-primary {
+  background-color: var(--primary-500);
+  color: var(--light-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-500);
+  color: var(--light-color);
+}
+
+.btn-tertiary {
+  background-color: var(--tertiary-600);
+  color: var(--dark-color);
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.btn-primary a,
+.btn-secondary a,
+.btn-dark a {
+  color: #fff;
+}
+
+.btn-outline a,
+.btn-tertiary a,
+.btn-transparent a {
+  color: var(--dark-color);
+}
+
+/* 
+================================================================================================================================
+Alerts
+================================================================================================================================
+*/
+
+.alert {
+  padding: 5px 20px;
+  border-radius: 2px;
+  max-width: 600px;
+  box-shadow: var(--shadow-4);
+}
+
+.alert-success {
+  background-color: var(--stroke-200);
+  border: 1px solid var(--stroke-500);
+}
+
+.alert-error {
+  background-color: var(--red-400);
+  border: 1px solid var(--red-700);
+  color: var(--light-color);
+}
+
+/* 
+================================================================================================================================
+Cards and pop-ups
+================================================================================================================================
+*/
+
+.card {
+  /* width: 500px; */
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-4);
+}
+
+.pop-up {
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: var(--shadow-4);
+}
+
+.pop-up-success {
+  background-color: var(--base-200);
+  border: 1px solid var(--base-500);
+}
+
+.pop-up-error {
+  background-color: var(--red-400);
+  border: 1px solid var(--red-700);
+  color: var(--light-color);
+}
+
+/* 
+================================================================================================================================
+Forms
+================================================================================================================================
+*/
+
+.form {
+  position: relative;
+  background-color: var(--light-color);
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: var(--shadow-4);
+  z-index: 100;
+}
+
+.form-control {
+  background-color: transparent;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.form-control input {
+  font-size: var(--font-size-1);
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: 2px #b4becb solid;
+  width: 100%;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+/* ========== Form-2 ========== */
+/* .form-2 {
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: var(--shadow-4);
+  z-index: 100;
+}
+
+.form-info {
+  margin: 20px 0;
+  padding: 15px 0;
+}
+
+.form-info input[type="text"],
+.form-info input[type="email"] {
+  border: 2px #b4becb solid;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--grey-200);
+}
+
+.form-info input[type="text"]:focus,
+.form-info input[type="email"]:focus {
+  outline: none;
+}
+
+.form-info input {
+  font-size: var(--font-size-1);
+} */
+
+.form-2 {
+  position: relative;
+  background-color: var(--light-color);
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 550px;
+  box-shadow: var(--shadow-2);
+  z-index: 100;
+}
+
+.form-info {
+  margin: 30px 0;
+}
+
+.form-info input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--grey-400);
+  border-radius: 2px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+}
+
+.form-info label {
+  text-transform: capitalize;
+  font-size: var(--font-size-3);
+  font-weight: 500;
+}
+
+.form-info label,
+.form-info input {
+  display: block;
+  padding: 5px 0;
+}
+
+.form-2 .button {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+/* .form-info .btn-medium {
+   width: 300px;
+} */
+
+/* ========= form-3 ========== */
+.form-3 {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  width: 550px;
+  z-index: 100;
+}
+
+.form-3 h2 {
+  text-align: center;
+}
+
+.form-details {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.form-details label {
+  text-transform: capitalize;
+  font-size: var(--font-size-3);
+  font-weight: 500;
+}
+
+.form-details input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--grey-400);
+  border-radius: 30px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+}
+
+.form-details input,
+.form-details label {
+  display: block;
+  text-align: center;
+}
+
+.form-3 .button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-3 .btn {
+  width: 300px;
+}
+
+/* ========== Form-report =========== */
+.form-report {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  /* width: 550px; */
+  z-index: 100;
+}
+
+.report-info {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.report-info label {
+  margin-right: 10px;
+  padding-right: 20px;
+}
+
+.report-info input {
+  outline: none;
+  /* width: 100%; */
+  height: 30px;
+  border: 2px solid var(--grey-400);
+  border-radius: 2px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+}
+
+/* .report-info label,
+.report-info input {
+} */
+
+.report-info .select option {
+  font-family: var(--bodyfont-6);
+}
+
+/* 
+================================================================================================================================
+Tables
+================================================================================================================================
+*/
+
+.table {
+  background-color: var(--grey-200);
+  margin: 20px 0;
+  padding: 40px;
+  min-width: 400px;
+  border: none;
+  border-radius: 5px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+
+.table-head-row {
+  background-color: var(--tint-400);
+}
+
+.column-title {
+  font-weight: bold;
+  text-align: left;
+}
+
+.column-title,
+.table-detail {
+  padding: 10px;
+  border-bottom: 1px solid var(--grey-500);
+  /* border-left: 1px solid var(--grey-500); */
+}
+
+.table-detail {
+  font-size: 15px;
+  text-align: left;
+}
+
+.table-detail:first-child,
+.column-title:first-child {
+  padding-left: 30px;
+  /* border-left: none; */
+}
+
+.table-detail:last-child,
+.column-title:last-child {
+  padding-right: 30px;
+}
+
+.table-body-row:nth-of-type(even) {
+  background-color: var(--grey-400);
+}
+
+.table-body-row:last-of-type {
+  border-bottom: 3px solid var(--tint-600);
+}
+
+/* 
+================================================================================================================================
+Keyframes and Loading
+================================================================================================================================
+*/
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--secondary-500);
+  animation: spinner 0.6s linear infinite;
+}
+
+.loading {
+  margin: 0 auto;
+}
+
+.loading-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.loading-md {
+  width: 4rem;
+  height: 4rem;
+}
+
+.loading-fancy {
+  width: 3rem;
+  height: 2rem;
+  border: 5px solid var(--grey-900);
+}
+
+/* 
+================================================================================================================================
+Text Sizes
+================================================================================================================================
+*/
+
+.sm {
+  font-size: var(--font-size-1);
+}
+
+.lead {
+  font-size: var(--font-size-4);
+}
+
+.md {
+  font-size: var(--font-size-6);
+}
+
+.lg {
+  font-size: var(--font-size-8);
+}
+
+.xl {
+  font-size: var(--font-size-10);
+}
+
+/* 
+================================================================================================================================
+Margins
+================================================================================================================================
+*/
+
+.my-1 {
+  margin: var(--font-size-1) 0;
+}
+
+.my-2 {
+  margin: var(--font-size-5) 0;
+}
+
+.my-3 {
+  margin: var(--font-size-6) 0;
+}
+
+.my-4 {
+  margin: var(--font-size-8) 0;
+}
+
+.my-5 {
+  margin: var(--font-size-10) 0;
+}
+
+.m-1 {
+  margin: var(--font-size-1);
+}
+
+.m-2 {
+  margin: var(--font-size-5);
+}
+
+.m-3 {
+  margin: var(--font-size-6);
+}
+
+.m-4 {
+  margin: var(--font-size-8);
+}
+
+.m-5 {
+  margin: var(--font-size-10);
+}
+
+/* 
+================================================================================================================================
+Paddings
+================================================================================================================================
+*/
+
+.py-1 {
+  padding: var(--font-size-1) 0;
+}
+
+.py-2 {
+  padding: var(--font-size-5) 0;
+}
+
+.py-3 {
+  padding: var(--font-size-6) 0;
+}
+
+.py-4 {
+  padding: var(--font-size-8) 0;
+}
+
+.py-5 {
+  padding: var(--font-size-10) 0;
+}
+
+.p-1 {
+  padding: var(--font-size-1);
+}
+
+.p-2 {
+  padding: var(--font-size-5);
+}
+
+.p-3 {
+  padding: var(--font-size-6);
+}
+
+.p-4 {
+  padding: var(--font-size-8);
+}
+
+.p-5 {
+  padding: var(--font-size-10);
+}

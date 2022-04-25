@@ -1,0 +1,73 @@
+.details .flex {
+  gap: 0px;
+}
+
+.details i {
+  position: relative;
+  top: 8px;
+}
+
+.details {
+  display: grid;
+  justify-content: center;
+}
+
+.span {
+  background-color: var(--grey-300);
+  margin-top: 40px;
+  border-radius: 5px;
+  padding-top: 20px
+}
+
+.span .form-2 {
+  background-color: var(--grey-300);
+  box-shadow: none;
+  margin-top: 0px;
+  width: 650px;
+  padding: 20px 60px;
+  padding-top: 0px;
+}
+
+.form-2 input {
+  height: 30px;
+  padding: 0 5px;
+}
+
+.form-2 label {
+  text-align: center;
+}
+
+.details .heading {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.details .grid {
+  grid-template-columns: 1fr;
+}
+
+.table-content {
+  display: grid;
+  justify-content: center;
+}
+
+.table-detail .remove {
+  text-align: center;
+}
+
+.delete {
+  padding: 1px 8px;
+  border: 2px solid var(--red-100);
+  border-radius: 50%;
+  text-align: right;
+}
+
+.delete:hover {
+  background-color: var(--red-200);
+}
+
+.alert-div {
+  margin-top: 20px;
+  margin-left: 60px;
+  max-width: 550px;
+}
